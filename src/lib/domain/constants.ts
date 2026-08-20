@@ -21,10 +21,26 @@ export const COMMITMENT_TYPE = {
   MEETING: 'meeting',
 } as const;
 
+export const COMMITMENT_PRIORITY = {
+  LOW: 'low',
+  MEDIUM: 'medium',
+  HIGH: 'high',
+  URGENT: 'urgent',
+} as const;
+
 export const CONFIDENCE = {
   HIGH: 'high',
   MEDIUM: 'medium',
   LOW: 'low',
+} as const;
+
+export const AI_MODELS = {
+  EXTRACTION: process.env.AI_MODEL || 'cc/claude-sonnet-4.5',
+} as const;
+
+export const MAX_RETRIES = {
+  AI_EXTRACTION: 3,
+  TRANSCRIPTION: 2,
 } as const;
 
 export const DEFAULT_TIMEZONE = 'America/Sao_Paulo';
