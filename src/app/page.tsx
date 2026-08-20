@@ -37,12 +37,20 @@ export default function Home() {
           </div>
         </div>
 
-        <Link
-          href="/dashboard"
-          className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-        >
-          Acessar Dashboard
-        </Link>
+        <div className="flex gap-4 justify-center">
+          <Link
+            href="/login"
+            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          >
+            Entrar
+          </Link>
+          <Link
+            href="/signup"
+            className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+          >
+            Criar Conta
+          </Link>
+        </div>
       </main>
     </div>
   );
